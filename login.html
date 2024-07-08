@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+<body>
+    <!-- HTML for the login form -->
+        <div class="site-name">
+            <span>SKYLINE HOTELS</span>
+        </div>
+        <form id="login-form" action="./index.html">
+            <h1>Login</h1>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">Login</button>
+            <p class="forget">Forgot password?<a href="#"> Click here</a></p>
+        <p class="forget">Don't have an account?<a href="./signup.html"> Click here</a></p>
+
+    </form> 
+    
+  <!-- CSS for styling the forms -->
+  <style>
+    body{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)),url("../images/hotel-room-5858067_1920.jpg") center/cover no-repeat;
+        font-family: 'Playfair Display', serif;
+    }
+    .site-name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        color: #fff;
+    }
+    .site-name span{ 
+        cursor: pointer;
+        letter-spacing: 2px;
+        transition: all 0.7s ease;
+    }
+    .site-name span:hover{
+        color: #f9d342;
+    }
+    form {
+      width: 30%;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    h1{
+        color: #fff;
+    }
+    @media (max-width: 600px) {
+      form {
+        width: 80%;
+      }
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button[type="submit"] {
+      width: 100%;
+      background-color: #f9d342;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    p{
+        color: #fff;
+    }
+    p a{
+        color: #f9d342;
+    }
+  </style>
+</body>
+</html>
